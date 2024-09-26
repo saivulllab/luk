@@ -1,0 +1,13 @@
+
+use (
+	./libs/config
+	./libs/database
+	./libs/logger
+	./services/core
+)
+
+replace (
+	github.com/saivulllab/luk/libs/database => ./libs/database
+	github.com/saivulllab/luk/libs/config => ./libs/config
+	github.com/saivulllab/luk/libs/logger => ./libs/logger
+)
