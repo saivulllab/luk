@@ -1,13 +1,20 @@
+go 1.23.2
 
 use (
 	./libs/config
-	./libs/database
+	./libs/enum
 	./libs/logger
+	./libs/pg
+	./libs/validator
+
 	./services/core
+	./services/mailer
 )
 
 replace (
-	github.com/saivulllab/luk/libs/database => ./libs/database
 	github.com/saivulllab/luk/libs/config => ./libs/config
+	github.com/saivulllab/luk/libs/emnum => ./libs/enum
 	github.com/saivulllab/luk/libs/logger => ./libs/logger
+	github.com/saivulllab/luk/libs/pg => ./libs/pg
+	github.com/saivulllab/luk/libs/validator => ./libs/validator
 )
